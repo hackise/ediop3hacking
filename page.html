@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ediop3Squad - Hacker Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #282828;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            display: none;
+            margin-bottom: 40px;
+        }
+        .section.active {
+            display: block;
+        }
+        .section h2 {
+            border-bottom: 2px solid #ff0000;
+            padding-bottom: 10px;
+        }
+        .section p {
+            margin: 10px 0;
+        }
+        .download-link {
+            display: block;
+            margin: 5px 0;
+            color: #ff0000;
+            text-decoration: none;
+            border: 1px solid #ff0000;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .subscribe {
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 10px;
+        }
+        .disclaimer {
+            font-size: 0.9em;
+            color: #ff0000;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ediop3Squad</h1>
+        <p>Your gateway to the hacker community</p>
+    </header>
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('resources')">Resources</a>
+        <a onclick="showSection('tutorials')">Tutorials</a>
+        <a onclick="showSection('forum')">Forum</a>
+        <a onclick="showSection('games')">Games</a>
+        <a onclick="showSection('tools')">Tools</a>
+        <a onclick="showSection('contact')">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="section active">
+            <h2>Welcome to ediop3Squad</h2>
+            <p>Welcome to ediop3Squad! Here you can download games and we offer hacking tools and black hat stuff. Click any of the topics on top to get started.</p>
+        </section>
+        <section id="resources" class="section">
+            <h2>Resources</h2>
+            <p>Explore a curated list of tools, blogs, and articles to enhance your hacking skills.</p>
+            <ul>
+                <li><a href="https://www.offensive-security.com/" class="download-link" target="_blank">Offensive Security</a></li>
+                <li><a href="https://www.exploit-db.com/" class="download-link" target="_blank">Exploit Database</a></li>
+                <li><a href="https://null-byte.wonderhowto.com/" class="download-link" target="_blank">Null Byte</a></li>
+            </ul>
+        </section>
+        <section id="tutorials" class="section">
+            <h2>Tutorials</h2>
+            <p>Step-by-step guides and video tutorials to help you master various hacking techniques.</p>
+            <ul>
+                <li><a href="https://www.youtube.com/playlist?list=PLBf0hzazHTGMmi4R6sXkzPQezpRpn9JzJ" class="download-link" target="_blank">Beginner Hacking Tutorials</a></li>
+                <li><a href="https://www.udemy.com/topic/ethical-hacking/" class="download-link" target="_blank">Udemy Ethical Hacking Courses</a></li>
+                <li><a href="https://www.coursera.org/courses?query=cybersecurity" class="download-link" target="_blank">Coursera Cybersecurity Courses</a></li>
+            </ul>
+        </section>
+        <section id="forum" class="section">
+            <h2>Forum</h2>
+            <p>Join the community discussions, ask questions, and share your knowledge.</p>
+            <ul>
+                <li><a href="https://www.hackforums.net/" class="download-link" target="_blank">Hack Forums</a></li>
+                <li><a href="https://www.reddit.com/r/hacking/" class="download-link" target="_blank">Reddit Hacking Community</a></li>
+                <li><a href="https://www.cyberforum.ru/" class="download-link" target="_blank">Cyber Forum</a></li>
+            </ul>
+        </section>
+        <section id="games" class="section">
+            <h2>Games</h2>
+            <p>Install and play popular hacking-related games.</p>
+            <ul>
+                <li><a href="https://www.roblox.com/download" class="download-link" target="_blank">Roblox</a></li>
+                <li><a href="https://kali.download/" class="download-link" target="_blank">Download Kali Linux ISO</a></li>
+                <li><a href="https://www.virtualbox.org/wiki/Downloads" class="download-link" target="_blank">Download VirtualBox</a></li>
+                <li><a href="https://github.com/Delta-Executor/Delta" class="download-link" target="_blank">Delta Roblox Executor</a></li>
+                <li><a href="https://www.vmware.com/products/workstation-pro.html" class="download-link" target="_blank">VMware Workstation</a></li>
+                <li><a href="https://store.steampowered.com/app/214730/Uplink/" class="download-link" target="_blank">Uplink (Hacking Simulator)</a></li>
+                <li><a href="https://www.hackmud.com/" class="download-link" target="_blank">hackmud</a></li>
+                <li><a href="https://hackerexperience.com/" class="download-link" target="_blank">Hacker Experience</a></li>
+            </ul>
+        </section>
+        <section id="tools" class="section">
+            <h2>Tools</h2>
+            <p>Download and use essential hacking tools.</p>
+            <ul>
+                <li><a href="https://github.com/vanhauser-thc/thc-hydra" class="download-link" target="_blank">Hydra Tool on GitHub</a></li>
+                <li><a href="https://github.com/sqlmapproject/sqlmap" class="download-link" target="_blank">SQLMap on GitHub</a></li>
+                <li><a href="https://nmap.org/download.html" class="download-link" target="_blank">Download Nmap</a></li>
+                <li><a href="https://www.wireshark.org/#download" class="download-link" target="_blank">Download Wireshark</a></li>
+                <li><a href="https://www.metageek.com/products/inssider/download/" class="download-link" target="_blank">Download inSSIDer</a></li>
+                <li><a href="https://github.com/rapid7/metasploit-framework" class="download-link" target="_blank">Metasploit Framework on GitHub</a></li>
+                <li><a href="https://github.com/rebootuser/LinEnum" class="download-link" target="_blank">LinEnum on GitHub</a></li>
+                <li><a href="https://github.com/PowerShellMafia/PowerSploit" class="download-link" target="_blank">PowerSploit on GitHub</a></li>
+                <li><a href="https://github.com/DanMcInerney/Intercept" class="download-link" target="_blank">Intercept on GitHub</a></li>
+                <li><a href="https://github.com/SecureAuthCorp/impacket" class="download-link" target="_blank">Impacket on GitHub</a></li>
+                <li><a href="https://github.com/zmap/zmap" class="download-link" target="_blank">ZMap on GitHub</a></li>
+                <li><a href="https://aircrack-ng.org/" class="download-link" target="_blank">Download Aircrack-ng</a></li>
+                <li><a href="https://github.com/htr-tech/zphisher" class="download-link" target="_blank">Zphisher on GitHub</a></li>
+                <li><a href="https://github.com/AlessandroZ/LaZagne" class="download-link" target="_blank">LaZagne on GitHub</a></li>
+                <li><a href="https://github.com/trustedsec/social-engineer-toolkit" class="download-link" target="_blank">Social Engineer Toolkit on GitHub</a></li>
+                <li><a href="https://github.com/EmpireProject/Empire" class="download-link" target="_blank">Empire on GitHub</a></li>
+                <li><a href="https://github.com/MobSF/Mobile-Security-Framework-MobSF" class="download-link" target="_blank">Mobile Security Framework (MobSF) on GitHub</a></li>
+                <li><a href="https://github.com/Gallopsled/pwntools" class="download-link" target="_blank">Pwntools on GitHub</a></li>
+            </ul>
+            <p class="disclaimer">Disclaimer: These tools are for educational and ethical purposes only. Unauthorized use of these tools is illegal and punishable by law. Use them responsibly and only on systems you own or have explicit permission to test.</p>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Get in touch with us on Discord: ediop3hacking</p>
+            <p>Subscribe to Little Hacker Boi on YouTube for more tutorials and updates.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 ediop3Squad. All rights reserved.</p>
+        <a href="https://youtube.com/@littlehackerboi" class="subscribe">Subscribe to Little Hacker Boi on YouTube</a>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
